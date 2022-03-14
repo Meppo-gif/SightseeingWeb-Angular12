@@ -1,0 +1,17 @@
+<div class="container mt-5 mb-5">
+
+  <div class="row">
+
+    <div class="col-lg-4" *ngFor="let fd of sightData">
+
+      <div class="sightbox mt-3 mb-3">
+          <img src="{{fd.sightImg}}" alt="" />
+          <h1>{{fd.sightName}}</h1>
+          <p>{{fd.sightDetails}}</p>
+          <p>{{fd.sightPrice | currency: '€'}}</p>
+          <br/>
+          <a class="buybtn" [routerLink]="['/menu',fd.id]">Ticket Book &nbsp; <em class="bi bi-bag"></em></a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.text
+{
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.text-center
+{
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary-color);
+}
